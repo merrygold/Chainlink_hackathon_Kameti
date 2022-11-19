@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at polygonscan.com on 2022-11-18
- */
-
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.17;
@@ -407,7 +403,9 @@ contract KametiContract is VRFConsumerBaseV2 {
     }
 
     // * Conflict Kameti
-    // ? If someone's go default in a kameti
+    // ? If someone go default in a kameti
+// Note: Ending the contract doesn't matter for the kameti as long as we have all the transaction details on an immutable ledger we can accuse all the culprits.
+// Also thanks to PolygonId good people's Id is private, and culprits Ids can be shared with the law.
     function conflictKameti(bytes32 kametiId) internal {
         // * Get Kameti
         Kameti storage kameti = idToKameti[kametiId];
