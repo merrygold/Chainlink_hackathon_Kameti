@@ -12,8 +12,8 @@ import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 
 contract KametiContract is VRFConsumerBaseV2 {
-    // * Random Number Code
 
+    // * Random Number Code
     // * Random Number Events
     event RequestSent(uint256 requestId, uint32 numWords);
     event RequestFulfilled(uint256 requestId, uint256[] randomWords);
@@ -70,6 +70,8 @@ contract KametiContract is VRFConsumerBaseV2 {
         emit RequestSent(requestId, numWords);
         return requestId;
     }
+
+    // * ----------- Main Contract Code ----------
 
     // ** Kameti (ROSCAs): A rotating savings and credit association is a group of individuals who
     // ** agree to meet for a defined period in order to save and borrow together, a form of
@@ -421,7 +423,4 @@ contract KametiContract is VRFConsumerBaseV2 {
         // * Emit kameti Ended
         emit kametiEnded(kametiId, contractBalance, false, true);
     }
-
-    // ** ChainLink keepers for Automation
-    // ** Check after every month who has paid or not paid
 }
