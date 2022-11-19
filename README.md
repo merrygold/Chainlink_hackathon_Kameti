@@ -1,4 +1,4 @@
-# Contract inside Contract
+# Solidity code inside contracts
 
 # Run locally on Remix (Polygon Mumbai Testnet) with Subscription Id: 2651
 
