@@ -25,6 +25,7 @@ We pin-pointed some of the most crucial problems in this process that everyone i
 
 - Transaction Records => Solved using IPFS storage & Polygon's native ledger (no one can manipulate or delete)
 
+# Technologies:
 # Using Chainlink
 
 => Getting a random number from chainlink VRF to select the winner
