@@ -26,14 +26,14 @@ We pin-pointed some of the most crucial problems in this process that everyone i
 - Transaction Records => Solved using IPFS storage & Polygon's native ledger (no one can manipulate or delete)
 
 # Technologies:
-# Using Chainlink
+# Using Chainlink (Eliminate Trust Issues)
 
 => Getting a random number from chainlink VRF to select the winner
 
-# Using PolygonID
+# Using PolygonID (Eliminate Identity issues)
 
 - We can't upload People's ID directly on the chain, thanksfully Polygon ID allows us to issue zk-claims (by getting their ID details off-chain and saving cryptographically) to people that they can later use for authentication on smart contracts & our other services.
 
-# Using Polygon
+# Using Polygon (Eliminate Transaction Records issue)
 
 - Uploading all the event data & Transaction details on the Polygon Network. We get an immutable ledger that no one can manipulate or delete like physical ledgers.
