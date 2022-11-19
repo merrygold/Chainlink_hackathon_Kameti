@@ -5,7 +5,6 @@
 ## Run locally on Remix (Polygon Mumbai Testnet) with Subscription Id: 2651
 
 
-
 # Motivation 
 
 We wanted to build something in the Social Impact category. We interviewd some locals to get a better idea of pain points that "Blockchain tech, Chainlink & Polygon" can solve while being user-friendly.
@@ -20,18 +19,20 @@ There are other types of these kind's of savings that our dapp's code can suppor
 # Problems:
 We pin-pointed some of the most crucial problems in this process that everyone involved face
 
--> Trust Issues (more specifically organizer favors people in the selection process)   => Solved using Chainlink VRF
--> Identity Issues (in case someone defaults, we don't have their right ID)     => Solved using Polygon ID
--> Transaction Records => Solved using IPFS storage & Polygon's native ledger (no one can manipulate or delete)
+- Trust Issues (more specifically organizer favors people in the selection process)   => Solved using Chainlink VRF
+
+- Identity Issues (in case someone defaults, we don't have their right ID)     => Solved using Polygon ID
+
+- Transaction Records => Solved using IPFS storage & Polygon's native ledger (no one can manipulate or delete)
 
 # Using Chainlink
 
--> Getting a random number from chainlink VRF to select the winner
+=> Getting a random number from chainlink VRF to select the winner
 
 # Using PolygonID
 
--> We can't upload People's ID directly on the chain, thanksfully Polygon ID allows us to issue zk-claims (by getting their ID details off-chain and saving cryptographically) to people that they can later use for authentication on smart contracts & our other services.
+- We can't upload People's ID directly on the chain, thanksfully Polygon ID allows us to issue zk-claims (by getting their ID details off-chain and saving cryptographically) to people that they can later use for authentication on smart contracts & our other services.
 
 # Using Polygon
 
--> Uploading all the event data & Transaction details on the Polygon Network. We get an immutable ledger that no one can manipulate or delete like physical ledgers.
+- Uploading all the event data & Transaction details on the Polygon Network. We get an immutable ledger that no one can manipulate or delete like physical ledgers.
